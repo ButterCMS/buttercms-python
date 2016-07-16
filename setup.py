@@ -24,7 +24,7 @@ else:
 
 setup(
     name = 'buttercms-python',
-    packages = ['buttercms-python'],
+    packages = ['butter_cms'],
     version = '0.1',
     description = 'Blogging platform built for developers',
     long_description=readme,
