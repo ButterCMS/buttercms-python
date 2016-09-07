@@ -1,6 +1,6 @@
 # buttercms-python
 
-Python Library for ButterCMS API.
+Python Library for ButterCMS API. 
 
 ## Documentation
 
