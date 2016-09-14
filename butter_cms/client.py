@@ -7,7 +7,7 @@ class Client(object):
         self.auth_token = auth_token
         self.url = 'https://api.buttercms.com/v2/'
 
-    def api_get(self, params=None, slug=''):
+    def api_get(self, slug='', params=None):
         payload = {
             'auth_token': self.auth_token,
         }
@@ -19,5 +19,5 @@ class Client(object):
         )
         return response.json()
 
-    def get(self, slug=''):
-        return self.api_get(slug=slug)
+    def get(self, slug='', params=None):
+        return self.api_get(slug=slug, params=params)

@@ -205,11 +205,13 @@ client.posts.search('query', page=1, page_size=10)
 
 #### Authors
 
-The Author's `.all()` method can take optional parameters to add additional fields to the repsonse. Currently supported parameters are:
-* `include=recent_posts`: Adds each author's posts under the `recent_posts` key in that author's returned dictionary
+The Author's `.all()` and `.get()` method accept an optional `params` to add additional data to the repsonse.
+
+* `{'include':'recent_posts'}`: Adds each author's posts under the `recent_posts` key in that author's returned dictionary
 
 ```python
 client.authors.all()
+client.authors.all({'include':'recent_posts'})
 ```
 
 ```json
@@ -235,6 +237,7 @@ client.authors.all()
 
 ```python
 client.authors.get('jennifer-smith')
+client.authors.get('jennifer-smith', {'include':'recent_posts'})
 ```
 
 ```json
@@ -260,11 +263,13 @@ client.authors.get('jennifer-smith')
 
 #### Categories
 
-The Category's `.all()` method can take optional parameters to add additional fields to the repsonse. Currently supported parameters are:
-* `include=recent_posts`: Adds posts tagged with that category under the `recent_posts` key in that category's returned dictionary
+The Category's `.all()` and `.get()` methods accept an optional `params` to add additional data to the repsonse.
+
+* `{'include':'recent_posts'}`: Adds posts tagged with that category under the `recent_posts` key in that category's returned dictionary
 
 ```python
 client.categories.all()
+client.categories.all({'include':'recent_posts'})
 ```
 
 ```json
@@ -280,6 +285,7 @@ client.categories.all()
 
 ```python
 client.categories.get('product-updates')
+client.categories.get('product-updates', {'include':'recent_posts'})
 ```
 
 ```json

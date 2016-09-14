@@ -7,6 +7,5 @@ class Category(Client):
         Client.__init__(self, auth_token)
         self.path = 'categories/'
 
-    def all(self, include=None):
-        params = {'include': include} if include else {}
+    def all(self, params=None):
         return self.api_get(params=params)
