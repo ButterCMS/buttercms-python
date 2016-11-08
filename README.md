@@ -299,6 +299,45 @@ client.categories.get('product-updates', {'include':'recent_posts'})
 
 [To Top](#buttercms-python)
 
+
+#### Tags
+
+The Tag's `.all()` and `.get()` methods accept an optional `params` to add additional data to the repsonse.
+
+* `{'include':'recent_posts'}`: Adds posts tagged with that tag under the `recent_posts` key in that tag's returned dictionary
+
+```python
+client.tags.all()
+client.tags.all({'include':'recent_posts'})
+```
+
+```json
+{
+  "data": [
+    {
+      "name": "test tag",
+      "slug": "test-tag"
+    }
+  ]
+}
+```
+
+```python
+client.tags.get('product-updates')
+client.tags.get('product-updates', {'include':'recent_posts'})
+```
+
+```json
+{
+  "data": {
+    "name": "Product Updates",
+    "slug": "product-updates"
+  }
+}
+```
+
+[To Top](#buttercms-python)
+
 #### Feeds
 
 ```python
