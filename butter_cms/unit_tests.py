@@ -2,6 +2,7 @@ import unittest
 from author import Author
 from butter_cms import ButterCMS
 from category import Category
+from tag import Tag
 from content_field import ContentField
 from feed import Feed
 from post import Post
@@ -65,6 +66,32 @@ class TestCategory(TestAPI):
     def test_get_include(self):
         category = Category(auth_token)
         response = category.get(params={'include':'recent_posts'})
+        self.is_ok_request(response)
+        for post in response['data']:
+            self.assertIn('recent_posts', post)
+
+
+class TestTag(TestAPI):
+    def test_all(self):
+        tag = Tag(auth_token)
+        response = tag.all()
+        self.is_ok_request(response)
+
+    def test_all_include(self):
+        tag = Tag(auth_token)
+        response = tag.all(params={'include':'recent_posts'})
+        self.is_ok_request(response)
+        for tag_post in response['data']:
+            self.assertIn('recent_posts', tag_post)
+
+    def test_get(self):
+        tag = Tag(auth_token)
+        response = tag.get('beer')
+        self.is_ok_request(response)
+
+    def test_get_include(self):
+        tag = Tag(auth_token)
+        response = tag.get(params={'include':'recent_posts'})
         self.is_ok_request(response)
         for post in response['data']:
             self.assertIn('recent_posts', post)
