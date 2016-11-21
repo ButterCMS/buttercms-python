@@ -7,11 +7,7 @@ class Post(Client):
         Client.__init__(self, auth_token)
         self.path = 'posts/'
 
-    def all(self, page=1, page_size=10):
-        params = {
-            'page': page,
-            'page_size': page_size,
-        }
+    def all(self, params=None):
         return self.api_get(params=params)
 
     def search(self, query='', page=1, page_size=10):
