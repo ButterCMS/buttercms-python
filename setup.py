@@ -25,7 +25,7 @@ else:
 setup(
     name = 'buttercms-python',
     packages = ['butter_cms'],
-    version = '0.5',
+    version = '0.7',
     description = 'API First Blogging and CMS platform built for developers',
     long_description=readme,
     author = 'Adam Yala',

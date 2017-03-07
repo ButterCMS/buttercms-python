@@ -1,9 +1,9 @@
-from author import Author
-from category import Category
-from content_field import ContentField
-from feed import Feed
-from post import Post
-from tag import Tag
+from .author import Author
+from .category import Category
+from .content_field import ContentField
+from .feed import Feed
+from .post import Post
+from .tag import Tag
 
 
 class ButterCMS(object):

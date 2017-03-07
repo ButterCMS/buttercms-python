@@ -1,11 +1,11 @@
 import unittest
-from author import Author
-from butter_cms import ButterCMS
-from category import Category
-from tag import Tag
-from content_field import ContentField
-from feed import Feed
-from post import Post
+from .author import Author
+from .butter_cms import ButterCMS
+from .category import Category
+from .tag import Tag
+from .content_field import ContentField
+from .feed import Feed
+from .post import Post
 auth_token = 'f97d131d955f48af0769a4c827bb47728cbd5d05'
 
 
