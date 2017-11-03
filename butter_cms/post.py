@@ -10,10 +10,15 @@ class Post(Client):
     def all(self, params=None):
         return self.api_get(params=params)
 
-    def search(self, query='', page=1, page_size=10):
-        params = {
-            'query': query,
-            'page': page,
-            'page_size': page_size,
-        }
+    def get(self, slug):
+        full_slug = '{}/'.format(slug)
+        return self.api_get(slug=full_slug)
+
+    def search(self, query, params=None):
+        if not params:
+            params = {
+                'query': query,
+            }
+        else:
+            params['query'] = query
         return self.api_get(params=params)

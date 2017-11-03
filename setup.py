@@ -1,5 +1,6 @@
 import sys
 
+from butter_cms.__version__ import __version__
 
 try:
     from setuptools import setup
@@ -25,7 +26,7 @@ else:
 setup(
     name = 'buttercms-python',
     packages = ['butter_cms'],
-    version = '0.7',
+    version = __version__,
     description = 'API First Blogging and CMS platform built for developers',
     long_description=readme,
     author = 'Adam Yala',

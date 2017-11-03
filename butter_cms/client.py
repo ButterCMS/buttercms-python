@@ -1,5 +1,7 @@
 import requests
 
+from .__version__ import __version__
+
 
 class Client(object):
     """Client"""
@@ -13,9 +15,15 @@ class Client(object):
         }
         if params:
             payload.update(params)
+
+        headers = {
+            'X-Butter-Client': 'Python/{}'.format(__version__),
+        }
+
         response = requests.get(
             url=self.url + self.path + str(slug),
-            params=payload
+            params=payload,
+            headers=headers,
         )
         return response.json()
 
