@@ -167,3 +167,11 @@ client.content_fields.get(['homepage_headline', 'homepage_title'])
 ### Other
 
 View Python [Blog engine](https://buttercms.com/python-blog-engine/) and [Full CMS](https://buttercms.com/python-cms/) for other examples of using ButterCMS with Python.
+
+### Tests
+
+To run tests:
+
+```python
+python -m unittest butter_cms/unit_tests.py
+```
