@@ -7,10 +7,10 @@ class Page(Client):
         Client.__init__(self, auth_token)
         self.path = 'pages/'
 
-    def list(self, slug, params=None):
-        full_slug = '{}/'.format(slug)
+    def list(self, page_type, params=None):
+        full_slug = '{}/'.format(page_type)
         return self.api_get(slug=full_slug, params=params)
 
-    def get(self, slug1, slug2, params=None):
-        full_slug = '{}/{}/'.format(slug1, slug2)
+    def get(self, page_type, page_slug, params=None):
+        full_slug = '{}/{}/'.format(page_type, page_slug)
         return self.api_get(slug=full_slug, params=params)
