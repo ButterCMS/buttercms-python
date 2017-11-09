@@ -8,12 +8,12 @@ For a comprehensive list of examples, check out the [API documentation](https://
 
 ## Jump to:
 
-* [Posts](#posts)
 * [Pages](#pages)
+* [Content Fields](#content-fields)
+* [Posts](#posts)
 * [Authors](#authors)
 * [Categories](#categories)
 * [Feeds](#feeds)
-* [Content Fields](#content-fields)
 
 ## Installation
 
@@ -54,7 +54,47 @@ print(my_post)
 # }
 ```
 
-### Making Calls
+### Pages
+
+The Page's `.list()` and `.get()` methods accept an optional `params` to add additional data to the response.
+
+```python
+client.pages.list('news')
+
+# Optional params
+client.pages.list('news', {'foo': 'bar'})
+```
+
+
+```python
+client.pages.get('news', 'hello-world')
+
+# Optional params
+client.pages.get('news', 'hello-world', {'foo': 'bar'})
+```
+
+
+[To Top](#buttercms-python)
+
+
+### Content Fields
+
+The Content Field's .get() method accepts an optional `params` to add additional data to the response.
+
+```python
+client.content_fields.get(['homepage_headline', 'homepage_title'])
+
+# Localization
+client.content_fields.get(['homepage_headline', 'homepage_title'], {'locale': 'en'})
+
+# Test Mode 
+client.content_fields.get(['homepage_headline', 'homepage_title'], {'test': 1})
+```
+
+[To Top](#buttercms-python)
+
+
+### Blog Engine
 
 #### Posts
 
@@ -71,22 +111,6 @@ client.posts.get('hello-world')
 ```python
 client.posts.search('query', {'page': 1, 'page_size': 10})
 ```
-
-#### Pages
-
-The Page's `.list()` and `.get()` methods accept an optional `params` to add additional data to the response.
-
-```python
-client.pages.list('news')
-```
-
-
-```python
-client.pages.get('news', 'hello-world')
-```
-
-
-[To Top](#buttercms-python)
 
 #### Authors
 
@@ -168,16 +192,6 @@ client.feeds.get('sitemap')
 
 [To Top](#buttercms-python)
 
-#### Content Fields
-
-The Content Field's .get() method accepts an optional `params` to add additional data to the response.
-
-```python
-client.content_fields.get(['homepage_headline', 'homepage_title'])
-```
-
-
-[To Top](#buttercms-python)
 
 
 ### Other
