@@ -56,13 +56,13 @@ print(my_post)
 
 ### Pages
 
-The Page's `.list()` and `.get()` methods accept an optional `params` to add additional data to the response.
+The Page's `.all()` and `.get()` methods accept an optional `params` to add additional data to the response.
 
 ```python
-client.pages.list('news')
+client.pages.all('news')
 
 # Optional params
-client.pages.list('news', {'foo': 'bar'})
+client.pages.all('news', {'foo': 'bar'})
 ```
 
 
