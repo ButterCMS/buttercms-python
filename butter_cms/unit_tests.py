@@ -1,10 +1,10 @@
 import unittest
 from .author import Author
-from .butter_cms import ButterCMS
 from .category import Category
 from .tag import Tag
 from .content_field import ContentField
 from .feed import Feed
+from .page import Page
 from .post import Post
 auth_token = 'f97d131d955f48af0769a4c827bb47728cbd5d05'
 
@@ -121,19 +121,31 @@ class TestFeed(TestAPI):
         self.is_ok_request(response)
 
 
+class TestPage(TestAPI):
+    def test_list(self):
+        page = Page(auth_token)
+        response = page.list('news')
+        self.is_ok_request(response)
+
+    def test_get(self):
+        page = Page(auth_token)
+        response = page.get('news', 'hello-world')
+        self.is_ok_request(response)
+
+
 class TestPost(TestAPI):
     def test_all(self):
         post = Post(auth_token)
         response = post.all()
         self.is_ok_request(response)
-        response = post.all(page=1, page_size=10)
+        response = post.all({'page': 1, 'page_size': 10})
         self.is_ok_request(response)
 
     def test_search(self):
         post = Post(auth_token)
         response = post.search('test')
         self.is_ok_request(response)
-        response = post.search('test', page=1, page_size=10)
+        response = post.search('test', {'page': 1, 'page_size': 10})
         self.is_ok_request(response)
 
     def test_get(self):

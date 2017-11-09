@@ -7,5 +7,8 @@ class ContentField(Client):
         Client.__init__(self, auth_token)
         self.path = 'content/'
 
-    def get(self, keys=None):
-        return self.api_get(params={'keys': ','.join(keys)})
+    def get(self, keys=None, params=None):
+        if not params:
+            params = {}
+        params['keys'] = ','.join(keys)
+        return self.api_get(params=params)

@@ -9,6 +9,7 @@ For a comprehensive list of examples, check out the [API documentation](https://
 ## Jump to:
 
 * [Posts](#posts)
+* [Pages](#pages)
 * [Authors](#authors)
 * [Categories](#categories)
 * [Feeds](#feeds)
@@ -68,7 +69,20 @@ client.posts.get('hello-world')
 
 
 ```python
-client.posts.search('query', page=1, page_size=10)
+client.posts.search('query', {'page': 1, 'page_size': 10})
+```
+
+#### Pages
+
+The Page's `.list()` and `.get()` methods accept an optional `params` to add additional data to the response.
+
+```python
+client.pages.list('news')
+```
+
+
+```python
+client.pages.get('news', 'hello-world')
 ```
 
 
@@ -76,7 +90,7 @@ client.posts.search('query', page=1, page_size=10)
 
 #### Authors
 
-The Author's `.all()` and `.get()` method accept an optional `params` to add additional data to the repsonse.
+The Author's `.all()` and `.get()` methods accept an optional `params` to add additional data to the response.
 
 * `{'include':'recent_posts'}`: Adds each author's posts under the `recent_posts` key in that author's returned dictionary
 
@@ -96,7 +110,7 @@ client.authors.get('jennifer-smith', {'include':'recent_posts'})
 
 #### Categories
 
-The Category's `.all()` and `.get()` methods accept an optional `params` to add additional data to the repsonse.
+The Category's `.all()` and `.get()` methods accept an optional `params` to add additional data to the response.
 
 * `{'include':'recent_posts'}`: Adds posts tagged with that category under the `recent_posts` key in that category's returned dictionary
 
@@ -117,7 +131,7 @@ client.categories.get('product-updates', {'include':'recent_posts'})
 
 #### Tags
 
-The Tag's `.all()` and `.get()` methods accept an optional `params` to add additional data to the repsonse.
+The Tag's `.all()` and `.get()` methods accept an optional `params` to add additional data to the response.
 
 * `{'include':'recent_posts'}`: Adds posts tagged with that tag under the `recent_posts` key in that tag's returned dictionary
 
@@ -156,6 +170,8 @@ client.feeds.get('sitemap')
 
 #### Content Fields
 
+The Content Field's .get() method accepts an optional `params` to add additional data to the response.
+
 ```python
 client.content_fields.get(['homepage_headline', 'homepage_title'])
 ```
@@ -167,3 +183,11 @@ client.content_fields.get(['homepage_headline', 'homepage_title'])
 ### Other
 
 View Python [Blog engine](https://buttercms.com/python-blog-engine/) and [Full CMS](https://buttercms.com/python-cms/) for other examples of using ButterCMS with Python.
+
+### Tests
+
+To run tests:
+
+```python
+python -m unittest butter_cms/unit_tests.py
+```
