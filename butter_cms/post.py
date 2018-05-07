@@ -21,4 +21,4 @@ class Post(Client):
             }
         else:
             params['query'] = query
-        return self.api_get(params=params)
+        return self.api_get(params=params, path_override='search/')

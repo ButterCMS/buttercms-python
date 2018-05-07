@@ -122,11 +122,6 @@ class TestFeed(TestAPI):
 
 
 class TestPage(TestAPI):
-    def test_list(self):
-        page = Page(auth_token)
-        response = page.list('news')
-        self.is_ok_request(response)
-
     def test_get(self):
         page = Page(auth_token)
         response = page.get('news', 'hello-world')
