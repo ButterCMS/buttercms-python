@@ -9,7 +9,7 @@ class Client(object):
         self.auth_token = auth_token
         self.url = 'https://api.buttercms.com/v2/'
 
-    def api_get(self, slug='', params=None):
+    def api_get(self, slug='', params=None, path_override=None):
         payload = {
             'auth_token': self.auth_token,
         }
@@ -20,8 +20,13 @@ class Client(object):
             'X-Butter-Client': 'Python/{}'.format(__version__),
         }
 
+        if path_override:
+            path = path_override
+        else:
+            path = self.path
+
         response = requests.get(
-            url=self.url + self.path + str(slug),
+            url=self.url + path + str(slug),
             params=payload,
             headers=headers,
         )
