@@ -9,7 +9,7 @@ For a comprehensive list of examples, check out the [API documentation](https://
 ## Jump to:
 
 * [Pages](#pages)
-* [Content Fields](#content-fields)
+* [Collections](#collections)
 * [Posts](#posts)
 * [Authors](#authors)
 * [Categories](#categories)
@@ -77,18 +77,14 @@ client.pages.get('news', 'hello-world', {'foo': 'bar'})
 [To Top](#buttercms-python)
 
 
-### Content Fields
+### Collections
 
-The Content Field's .get() method accepts an optional `params` to add additional data to the response.
+For a list of params see the [API documentation](https://buttercms.com/docs/api/?python#collections)
+
+.get() method accepts an optional `params` dict to add additional data to the response.
 
 ```python
-client.content_fields.get(['homepage_headline', 'homepage_title'])
-
-# Localization
-client.content_fields.get(['homepage_headline', 'homepage_title'], {'locale': 'en'})
-
-# Test Mode 
-client.content_fields.get(['homepage_headline', 'homepage_title'], {'test': 1})
+client.content_fields.get(['collection_key'], {'locale': 'en'})
 ```
 
 [To Top](#buttercms-python)
