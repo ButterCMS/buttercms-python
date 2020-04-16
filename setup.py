@@ -29,6 +29,7 @@ setup(
     version = __version__,
     description = 'API First Blogging and CMS platform built for developers',
     long_description=readme,
+    long_description_content_type="text/markdown",
     author = 'Adam Yala',
     author_email = 'adam@adamyala.com',
     url = 'https://github.com/buttercms/buttercms-python',
