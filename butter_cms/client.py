@@ -18,6 +18,7 @@ class Client(object):
 
         headers = {
             'X-Butter-Client': 'Python/{}'.format(__version__),
+            'Accept-Encoding': 'gzip',
         }
 
         if path_override:
