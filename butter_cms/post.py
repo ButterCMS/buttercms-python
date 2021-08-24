@@ -15,10 +15,11 @@ class Post(Client):
         return self.api_get(slug=full_slug)
 
     def search(self, query, params=None):
+        slug = 'search/'
         if not params:
             params = {
                 'query': query,
             }
         else:
             params['query'] = query
-        return self.api_get(params=params, path_override='search/')
+        return self.api_get(slug=slug, params=params)

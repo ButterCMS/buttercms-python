@@ -14,3 +14,13 @@ class Page(Client):
     def get(self, page_type, page_slug, params=None):
         full_slug = '{}/{}/'.format(page_type, page_slug)
         return self.api_get(slug=full_slug, params=params)
+
+    def search(self, query, params=None):
+        slug = 'search/'
+        if not params:
+            params = {
+                'query': query,
+            }
+        else:
+            params['query'] = query
+        return self.api_get(slug=slug, params=params)
