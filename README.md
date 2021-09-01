@@ -56,7 +56,7 @@ print(my_post)
 
 ### Pages
 
-The Page's `.all()` and `.get()` methods accept an optional `params` to add additional data to the response.
+The Page's `.all()`, `.get()` and `.search()` methods accept an optional `params` to add additional data to the response.
 
 ```python
 client.pages.all('news')
@@ -73,6 +73,9 @@ client.pages.get('news', 'hello-world')
 client.pages.get('news', 'hello-world', {'foo': 'bar'})
 ```
 
+```python
+client.pages.search('enter search query', {'page': 1, 'page_size': 10})
+```
 
 [To Top](#buttercms-python)
 

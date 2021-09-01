@@ -127,6 +127,13 @@ class TestPage(TestAPI):
         response = page.get('news', 'hello-world')
         self.is_ok_request(response)
 
+    def test_search(self):
+        page = Page(auth_token)
+        response = page.search('test')
+        self.is_ok_request(response)
+        response = page.search('test', {'page': 1, 'page_size': 10})
+        self.is_ok_request(response)
+
 
 class TestPost(TestAPI):
     def test_all(self):
