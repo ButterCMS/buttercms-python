@@ -1,6 +1,7 @@
 import requests
 
 from .__version__ import __version__
+from requests.exceptions import HttpError
 
 
 class Client(object):
@@ -26,11 +27,21 @@ class Client(object):
         else:
             path = self.path
 
-        response = requests.get(
-            url=self.url + path + str(slug),
-            params=payload,
-            headers=headers,
-        )
+        try:
+            response = requests.get(
+                url=self.url + path + str(slug),
+                params=payload,
+                headers=headers,
+                timeout=10,
+            )
+        except requests.exceptions.Timeout:
+            raise
+
+        # We are not using response.raise_for_status(), as it only raises errors for definite error codes; we want to raise errors for any status other than 200.  
+        # more info here: https://github.com/ButterCMS/buttercms-python/issues/5
+        if response.status_code != 200: 
+            raise HttpError(response.status_code)
+
         return response.json()
 
     def get(self, slug='', params=None):
