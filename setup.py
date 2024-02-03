@@ -24,16 +24,16 @@ else:
 
 
 setup(
-    name = 'buttercms-python',
+    name = 'buttercms-python-testing-fork',
     packages = ['butter_cms'],
     version = __version__,
     description = 'API First Blogging and CMS platform built for developers',
     long_description=readme,
     long_description_content_type="text/markdown",
-    author = 'Adam Yala',
-    author_email = 'adam@adamyala.com',
-    url = 'https://github.com/buttercms/buttercms-python',
-    download_url = 'https://github.com/buttercms/buttercms-python/tarball/0.1',
+    author = 'Martin Albert',
+    author_email = 'martin.albert.187@gmail.com',
+    url = 'https://github.com/martinalbert/buttercms-python',
+    download_url = 'https://github.com/martinalbert/buttercms-python/tarball/0.1',
     py_modules=['butter_cms'],
     install_requires=install_requires,
     keywords = ['foo', 'bar', 'baz'],
