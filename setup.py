@@ -1,9 +1,9 @@
 import sys
 
-from butter_cms.__version__ import __version__
+from butter_cms.version import __version__
 
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
 
@@ -25,7 +25,7 @@ else:
 
 setup(
     name = 'buttercms-python-testing-fork',
-    packages = ['butter_cms'],
+    packages=find_packages(),
     version = __version__,
     description = 'API First Blogging and CMS platform built for developers',
     long_description=readme,
@@ -34,7 +34,6 @@ setup(
     author_email = 'martin.albert.187@gmail.com',
     url = 'https://github.com/martinalbert/buttercms-python',
     download_url = 'https://github.com/martinalbert/buttercms-python/tarball/0.1',
-    py_modules=['butter_cms'],
     install_requires=install_requires,
     keywords = ['foo', 'bar', 'baz'],
     classifiers=[
