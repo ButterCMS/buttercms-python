@@ -1,7 +1,5 @@
 import sys
 
-from butter_cms.version import __version__
-
 try:
     from setuptools import setup, find_packages
 except ImportError:
@@ -22,11 +20,17 @@ if sys.version_info < (2, 7, 9):
 else:
     install_requires.append('requests')
 
+def get_version():
+    for line in open('butter_cms/version.py', 'r'):
+        if line.startswith('__version__'):
+            return line.split('=')[1].strip().strip("'")
+
+    return RuntimeError('Unable to find version string.')
 
 setup(
     name = 'buttercms-python-testing-fork',
     packages=find_packages(),
-    version = __version__,
+    version=get_version(),
     description = 'API First Blogging and CMS platform built for developers',
     long_description=readme,
     long_description_content_type="text/markdown",
