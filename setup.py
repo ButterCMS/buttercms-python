@@ -39,7 +39,7 @@ setup(
     url = 'https://github.com/martinalbert/buttercms-python',
     download_url = 'https://github.com/martinalbert/buttercms-python/tarball/0.1',
     install_requires=install_requires,
-    keywords = ['foo', 'bar', 'baz'],
+    keywords = ['buttercms', 'sdk', 'cms', 'api', 'blogging'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
