@@ -20,4 +20,4 @@ jobs:
     
     - name: Run tests
       run: |
-        python -m unittest ./butter_cms_test/unit_tests.py
+        python -m unittest ./buttercms-python-testing-fork_test/unit_tests.py

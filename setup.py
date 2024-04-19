@@ -21,7 +21,7 @@ else:
     install_requires.append('requests')
 
 def get_version():
-    for line in open('butter_cms/version.py', 'r'):
+    for line in open('buttercms-python-testing-fork/version.py', 'r'):
         if line.startswith('__version__'):
             return line.split('=')[1].strip().strip("'")
 

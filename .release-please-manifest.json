@@ -1,6 +1,3 @@
 {
-    "extra-files": ["README.md"],
-    "pull-request-title-pattern": "chore(release): ${version}",
-    "pull-request-header": ":robot: Merge this PR to release a new version",
-    "last-release-sha": "06ceaa8df705880a4c0667a3949a4126233d4695"
+    ".": "2.0.0"
 }
