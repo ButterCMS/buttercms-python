@@ -8,7 +8,7 @@ class Client(object):
     """Client"""
     def __init__(self, auth_token):
         self.auth_token = auth_token
-        self.url = 'https://api.buttercms.com/v2/'
+        self.url = 'https://api.buttercms.com/v3/'
 
     def api_get(self, slug='', params=None, path_override=None):
         payload = {
