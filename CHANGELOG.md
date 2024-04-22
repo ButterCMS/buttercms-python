@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/martinalbert/buttercms-python/compare/v3.0.0...v3.0.1) (2024-04-22)
+
+
+### Bug Fixes
+
+* revert the version ([99f983f](https://github.com/martinalbert/buttercms-python/commit/99f983fb4b59d6c8a96dd3f15e92965bb5b2f633))
+
 ## [3.0.0](https://github.com/martinalbert/buttercms-python/compare/v2.1.0...v3.0.0) (2024-04-20)
 
 
