@@ -1,7 +1,7 @@
 import requests
 
 from .__version__ import __version__
-from requests.exceptions import HttpError
+from requests.exceptions import HTTPError
 
 
 class Client(object):
@@ -40,7 +40,7 @@ class Client(object):
         # We are not using response.raise_for_status(), as it only raises errors for definite error codes; we want to raise errors for any status other than 200.  
         # more info here: https://github.com/ButterCMS/buttercms-python/issues/5
         if response.status_code != 200: 
-            raise HttpError(response.status_code)
+            raise HTTPError(response.status_code)
 
         return response.json()
 

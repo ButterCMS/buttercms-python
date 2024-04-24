@@ -1,9 +1,8 @@
 import sys
-
-from butter_cms.__version__ import __version__
+import os
 
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
 
@@ -22,11 +21,18 @@ if sys.version_info < (2, 7, 9):
 else:
     install_requires.append('requests')
 
+package_root = os.path.abspath(os.path.dirname(__file__))
+version = {}
+
+with open(os.path.join(package_root, "butter_cms/__version__.py")) as fp:
+    exec(fp.read(), version)
+
+version = version["__version__"]
 
 setup(
     name = 'buttercms-python',
-    packages = ['butter_cms'],
-    version = __version__,
+    packages = find_packages(),
+    version = version,
     description = 'API First Blogging and CMS platform built for developers',
     long_description=readme,
     long_description_content_type="text/markdown",
