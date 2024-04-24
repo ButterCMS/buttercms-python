@@ -1,0 +1,91 @@
+# This workflow will publish a package to both TestPyPi and PyPi when a release is created
+
+name: Test & Build & Publish to Pypi
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    if: startsWith(github.event.head_commit.message, 'chore(release)')
+    runs-on: ubuntu-22.04
+    steps:  
+    - name: Checkout code
+      uses: actions/checkout@v4.1.4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5.1.0
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Install pypa/build
+      run: >-
+        python3 -m
+        pip install
+        build
+        --user
+
+    - name: Build a binary wheel and a source tarball
+      run: python3 -m build
+    
+    - name: Store the distribution packages
+      uses: actions/upload-artifact@v4.3.3
+      with:
+        name: python-package-distributions
+        path: dist/
+
+  publish-to-test-pypi:
+    name: >-
+      Publish to Test PyPI
+    needs:
+    - build
+    if: startsWith(github.event.head_commit.message, 'chore(release)')
+    runs-on: ubuntu-22.04
+
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/p/buttercms-python
+      
+    permissions:
+      id-token: write
+
+    steps:
+    - name: Download all the dists
+      uses: actions/download-artifact@v4.1.7
+      with:
+        name: python-package-distributions
+        path: dist/
+
+    - name: Publish distribution 📦 to Test PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1.8
+      with:
+        repository-url: https://test.pypi.org/legacy/
+
+  publish-to-pypi:
+    name: >-
+      Publish to PyPI
+    needs:
+    - publish-to-test-pypi
+    if: startsWith(github.event.head_commit.message, 'chore(release)')
+    runs-on: ubuntu-22.04
+
+    environment:
+      name: pypi
+      url: https://pypi.org/p/buttercms-python
+
+    permissions:
+      id-token: write
+
+    steps:
+    - name: Download all the dists
+      uses: actions/download-artifact@v4.1.7
+      with:
+        name: python-package-distributions
+        path: dist/
+
+    - name: Publish distribution 📦 to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1.8

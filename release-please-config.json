@@ -1,0 +1,13 @@
+{
+    "last-release-sha": "426e26596b25b8fe517ff6a4a19fa745a0e2f2f9",
+    "packages": {
+        ".": {
+            "release-type": "python",
+            "pull-request-title-pattern": "chore(release): ${version}",
+            "pull-request-header": ":robot: Merge this PR to release a new version",
+            "extra-files": [
+                "README.md"
+            ]
+        }
+    }
+}
