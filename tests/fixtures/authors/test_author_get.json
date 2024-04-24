@@ -1,0 +1,110 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/authors/sdk-tests",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "content-length": [
+                        "234"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "X-Timer": [
+                        "S1716209387.651152,VS0,VE2"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "X-Cache": [
+                        "MISS, HIT"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 1"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 12:49:46 GMT"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kjyo7100025-IAD, cache-vie6321-VIE"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "Age": [
+                        "41"
+                    ]
+                },
+                "body": {
+                    "string": "{\"data\":{\"first_name\":\"SDK\",\"last_name\":\"Tests\",\"email\":\"sdktests@buttercms.com\",\"slug\":\"sdk-tests\",\"bio\":\"\",\"title\":\"\",\"linkedin_url\":\"\",\"facebook_url\":\"\",\"instagram_url\":\"\",\"pinterest_url\":\"\",\"twitter_handle\":\"\",\"profile_image\":\"\"}}",
+                    "object": {
+                        "data": {
+                            "first_name": "SDK",
+                            "last_name": "Tests",
+                            "email": "sdktests@buttercms.com",
+                            "slug": "sdk-tests",
+                            "bio": "",
+                            "title": "",
+                            "linkedin_url": "",
+                            "facebook_url": "",
+                            "instagram_url": "",
+                            "pinterest_url": "",
+                            "twitter_handle": "",
+                            "profile_image": ""
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

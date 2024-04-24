@@ -1,6 +1,15 @@
 # buttercms-python - 2.1.1 <!-- {x-release-please-version} -->
 
+[![PyPI version](https://badge.fury.io/py/buttercms-python.svg)](https://badge.fury.io/py/buttercms-python)
+[![TestPyPI version](https://img.shields.io/pypi/v/buttercms-python?label=TestPyPI)](https://test.pypi.org/project/buttercms-python/)
+[![Downloads](https://pepy.tech/badge/buttercms-python)](https://pepy.tech/project/buttercms-python)
+[![Downloads](https://pepy.tech/badge/buttercms-python/month)](https://pepy.tech/project/buttercms-python)
+[![Downloads](https://pepy.tech/badge/buttercms-python/week)](https://pepy.tech/project/buttercms-python)
+
 Python Library for ButterCMS API. 
+
+> [!IMPORTANT]
+> We officially support Python versions 3.8 to 3.12. While compatibility with other Python 3.x versions is possible, as we currently do not utilize any version-specific features, it is not guaranteed.
 
 ## Documentation
 

@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/posts/search/?query=example+post",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 401,
+                    "message": "Unauthorized"
+                },
+                "headers": {
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Content-Length": [
+                        "27"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kcgs7200115-IAD, cache-vie6371-VIE"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Www-Authenticate": [
+                        "Token"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 14:09:14 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "X-Timer": [
+                        "S1716214155.625333,VS0,VE120"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Invalid token.\"}",
+                    "object": {
+                        "detail": "Invalid token."
+                    }
+                }
+            }
+        }
+    ]
+}

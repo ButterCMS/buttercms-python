@@ -1,0 +1,124 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/pages/*/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Served-By": [
+                        "cache-iad-kjyo7100118-IAD, cache-vie6354-VIE"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Cache": [
+                        "MISS, HIT"
+                    ],
+                    "content-length": [
+                        "573"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Age": [
+                        "206"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 13:55:40 GMT"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "X-Timer": [
+                        "S1716213340.043015,VS0,VE1"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ]
+                },
+                "body": {
+                    "string": "{\"meta\":{\"next_page\":null,\"previous_page\":null,\"count\":1},\"data\":[{\"slug\":\"simple-page\",\"name\":\"Simple Page\",\"published\":\"2024-05-17T14:14:47.533297Z\",\"updated\":\"2024-05-17T14:14:47.550734Z\",\"page_type\":null,\"fields\":{\"seo_title\":\"Anvils and Dynamite | Acme Co\",\"headline\":\"Acme Co provides supplies to your favorite cartoon heroes.\",\"hero_image\":\"https://cdn.buttercms.com/c8oSTGcwQDC5I58km5WV\",\"call_to_action\":\"Buy Now\",\"customer_logos\":[{\"logo_image\":\"https://cdn.buttercms.com/1FNvDuOJSROw1fybRCYU\"},{\"logo_image\":\"https://cdn.buttercms.com/1FNvDuOJSROw1fybRCYU\"}]}}]}",
+                    "object": {
+                        "meta": {
+                            "next_page": null,
+                            "previous_page": null,
+                            "count": 1
+                        },
+                        "data": [
+                            {
+                                "slug": "simple-page",
+                                "name": "Simple Page",
+                                "published": "2024-05-17T14:14:47.533297Z",
+                                "updated": "2024-05-17T14:14:47.550734Z",
+                                "page_type": null,
+                                "fields": {
+                                    "seo_title": "Anvils and Dynamite | Acme Co",
+                                    "headline": "Acme Co provides supplies to your favorite cartoon heroes.",
+                                    "hero_image": "https://cdn.buttercms.com/c8oSTGcwQDC5I58km5WV",
+                                    "call_to_action": "Buy Now",
+                                    "customer_logos": [
+                                        {
+                                            "logo_image": "https://cdn.buttercms.com/1FNvDuOJSROw1fybRCYU"
+                                        },
+                                        {
+                                            "logo_image": "https://cdn.buttercms.com/1FNvDuOJSROw1fybRCYU"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

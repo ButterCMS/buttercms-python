@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/posts/example-post/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 401,
+                    "message": "Unauthorized"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kjyo7100057-IAD, cache-vie6326-VIE"
+                    ],
+                    "X-Timer": [
+                        "S1716213977.679801,VS0,VE142"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 14:06:16 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "Content-Length": [
+                        "27"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Www-Authenticate": [
+                        "Token"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Invalid token.\"}",
+                    "object": {
+                        "detail": "Invalid token."
+                    }
+                }
+            }
+        }
+    ]
+}

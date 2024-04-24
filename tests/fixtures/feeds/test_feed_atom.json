@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/feeds/atom",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "Age": [
+                        "0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kcgs7200085-IAD, cache-vie6327-VIE"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "content-length": [
+                        "756"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Timer": [
+                        "S1716212449.979703,VS0,VE193"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 13:40:49 GMT"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ]
+                },
+                "body": {
+                    "string": "{\"data\":\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\\n<feed xmlns=\\\"http://www.w3.org/2005/Atom\\\" xml:lang=\\\"en-us\\\">\\n   <title>Latest blog posts</title>\\n   <link href=\\\"rss/\\\" rel=\\\"alternate\\\" />\\n   <link href=\\\"atom/\\\" rel=\\\"self\\\" />\\n   <id>rss/</id>\\n   <updated>2024-05-17T14:13:46.787109+00:00</updated>\\n   \\n   <entry>\\n      <title>Example Post</title>\\n      <link href=\\\"/example-post\\\" rel=\\\"alternate\\\" />\\n      <published>2024-05-17T14:13:46.787109+00:00</published>\\n      <updated>2024-05-17T14:13:46.787109+00:00</updated>\\n      <author>\\n         <name>SDK Tests</name>\\n      </author>\\n      <id>/example-post</id>\\n      <summary type=\\\"html\\\">This is an example blog post. Pretty neat huh?</summary>\\n   </entry>\\n   \\n</feed>\"}",
+                    "object": {
+                        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\" xml:lang=\"en-us\">\n   <title>Latest blog posts</title>\n   <link href=\"rss/\" rel=\"alternate\" />\n   <link href=\"atom/\" rel=\"self\" />\n   <id>rss/</id>\n   <updated>2024-05-17T14:13:46.787109+00:00</updated>\n   \n   <entry>\n      <title>Example Post</title>\n      <link href=\"/example-post\" rel=\"alternate\" />\n      <published>2024-05-17T14:13:46.787109+00:00</published>\n      <updated>2024-05-17T14:13:46.787109+00:00</updated>\n      <author>\n         <name>SDK Tests</name>\n      </author>\n      <id>/example-post</id>\n      <summary type=\"html\">This is an example blog post. Pretty neat huh?</summary>\n   </entry>\n   \n</feed>"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/authors/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 401,
+                    "message": "Unauthorized"
+                },
+                "headers": {
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "X-Timer": [
+                        "S1716209390.475255,VS0,VE130"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Www-Authenticate": [
+                        "Token"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 12:49:50 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kjyo7100176-IAD, cache-vie6370-VIE"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "Content-Length": [
+                        "27"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Invalid token.\"}",
+                    "object": {
+                        "detail": "Invalid token."
+                    }
+                }
+            }
+        }
+    ]
+}

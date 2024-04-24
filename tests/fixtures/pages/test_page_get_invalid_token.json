@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/pages/landing-page/landing-page-with-components/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 401,
+                    "message": "Unauthorized"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, PUT, PATCH, HEAD, OPTIONS"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 13:58:45 GMT"
+                    ],
+                    "Www-Authenticate": [
+                        "Token"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kjyo7100123-IAD, cache-vie6361-VIE"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "X-Timer": [
+                        "S1716213526.634227,VS0,VE125"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Content-Length": [
+                        "27"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Invalid token.\"}",
+                    "object": {
+                        "detail": "Invalid token."
+                    }
+                }
+            }
+        }
+    ]
+}

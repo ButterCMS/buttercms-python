@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/authors/sdk-tests",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 401,
+                    "message": "Unauthorized"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Content-Length": [
+                        "27"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "X-Timer": [
+                        "S1716209387.763832,VS0,VE555"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "Www-Authenticate": [
+                        "Token"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 12:49:47 GMT"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kcgs7200144-IAD, cache-vie6324-VIE"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Invalid token.\"}",
+                    "object": {
+                        "detail": "Invalid token."
+                    }
+                }
+            }
+        }
+    ]
+}

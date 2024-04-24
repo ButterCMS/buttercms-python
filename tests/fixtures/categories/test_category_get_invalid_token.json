@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/categories/example-category",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 401,
+                    "message": "Unauthorized"
+                },
+                "headers": {
+                    "Www-Authenticate": [
+                        "Token"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Content-Length": [
+                        "27"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 12:53:24 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kjyo7100153-IAD, cache-vie6345-VIE"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Timer": [
+                        "S1716209604.022195,VS0,VE168"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Invalid token.\"}",
+                    "object": {
+                        "detail": "Invalid token."
+                    }
+                }
+            }
+        }
+    ]
+}

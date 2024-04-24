@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/posts/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 401,
+                    "message": "Unauthorized"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "Allow": [
+                        "GET, POST, HEAD, OPTIONS"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "Www-Authenticate": [
+                        "Token"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 14:04:12 GMT"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kiad7000165-IAD, cache-vie6377-VIE"
+                    ],
+                    "Content-Length": [
+                        "27"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "X-Timer": [
+                        "S1716213852.268802,VS0,VE124"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Invalid token.\"}",
+                    "object": {
+                        "detail": "Invalid token."
+                    }
+                }
+            }
+        }
+    ]
+}

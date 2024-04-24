@@ -1,0 +1,100 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/tags/example-tag",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Age": [
+                        "0"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 14:11:41 GMT"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kjyo7100103-IAD, cache-vie6370-VIE"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "content-length": [
+                        "52"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Timer": [
+                        "S1716214301.948352,VS0,VE145"
+                    ]
+                },
+                "body": {
+                    "string": "{\"data\":{\"name\":\"Example Tag\",\"slug\":\"example-tag\"}}",
+                    "object": {
+                        "data": {
+                            "name": "Example Tag",
+                            "slug": "example-tag"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

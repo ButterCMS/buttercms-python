@@ -1,0 +1,97 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/content/?keys=non-existent-key",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 404,
+                    "message": "Not Found"
+                },
+                "headers": {
+                    "Age": [
+                        "2550"
+                    ],
+                    "X-Timer": [
+                        "S1716212270.055520,VS0,VE1"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Allow": [
+                        "GET, POST, HEAD, OPTIONS"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 13:37:50 GMT"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Cache": [
+                        "MISS, HIT"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kiad7000145-IAD, cache-vie6365-VIE"
+                    ],
+                    "content-length": [
+                        "51"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Content key non-existent-key not found\"}",
+                    "object": {
+                        "detail": "Content key non-existent-key not found"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+# This workflow runs tests on all non-master branches to ensure code stability and quality before merging.
+
+name: Run Tests
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
