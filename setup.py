@@ -9,7 +9,6 @@ except ImportError:
 with open('README.md', 'r') as f:
     readme = f.read()
 
-
 install_requires = []
 if sys.version_info < (2, 7, 9):
     raise Exception('ButterCMS uses the requests library to securely talk to https://buttercms.com '
@@ -24,7 +23,7 @@ else:
 package_root = os.path.abspath(os.path.dirname(__file__))
 version = {}
 
-with open(os.path.join(package_root, "butter_cms/__version__.py")) as fp:
+with open(os.path.join(package_root, "butter_cms/version.py")) as fp:
     exec(fp.read(), version)
 
 version = version["__version__"]
@@ -36,13 +35,13 @@ setup(
     description = 'API First Blogging and CMS platform built for developers',
     long_description=readme,
     long_description_content_type="text/markdown",
-    author = 'Adam Yala',
-    author_email = 'adam@adamyala.com',
+    author = 'ButterCMS',
+    author_email = 'support@buttercms.com',
     url = 'https://github.com/buttercms/buttercms-python',
     download_url = 'https://github.com/buttercms/buttercms-python/tarball/0.1',
     py_modules=['butter_cms'],
     install_requires=install_requires,
-    keywords = ['foo', 'bar', 'baz'],
+    keywords = ['buttercms', 'sdk', 'cms', 'api'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

@@ -1,4 +1,4 @@
-# buttercms-python
+# buttercms-python - 2.0.0 <!-- {x-release-please-version} -->
 
 Python Library for ButterCMS API. 
 
