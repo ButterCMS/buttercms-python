@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.1.0](https://github.com/ButterCMS/buttercms-python/compare/v2.0.0...v2.1.0) (2024-05-07)
+
+
+### Features
+
+* implement continuous delivery ([1972c84](https://github.com/ButterCMS/buttercms-python/commit/1972c84ba0eb41fd2797b7e5c33fc0b8281f8698))
+
+
+### Bug Fixes
+
+* add needed requirements file ([1972c84](https://github.com/ButterCMS/buttercms-python/commit/1972c84ba0eb41fd2797b7e5c33fc0b8281f8698))
+
+
+### Documentation
+
+* add contributing guide ([1972c84](https://github.com/ButterCMS/buttercms-python/commit/1972c84ba0eb41fd2797b7e5c33fc0b8281f8698))
+
 ## 2.0.0
 
 ### Added
