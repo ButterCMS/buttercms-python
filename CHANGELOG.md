@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.1](https://github.com/ButterCMS/buttercms-python/compare/v2.1.0...v2.1.1) (2024-05-07)
+
+
+### Bug Fixes
+
+* add permissions for packages and deployments ([291ce2b](https://github.com/ButterCMS/buttercms-python/commit/291ce2b88aed097a96c672cac1969e0ea716da01))
+* enable publish workflow ([efda10b](https://github.com/ButterCMS/buttercms-python/commit/efda10b53c1ad250ddbc7af8321d155b0d3fc74d))
+
 ## [2.1.0](https://github.com/ButterCMS/buttercms-python/compare/v2.0.0...v2.1.0) (2024-05-07)
 
 
