@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    if: startsWith(github.event.head_commit.message, 'chore(release)')
+    if: contains(github.event.head_commit.message, 'chore(release)')
     runs-on: ubuntu-22.04
     steps:  
     - name: Checkout code
@@ -43,7 +43,7 @@ jobs:
       Publish to Test PyPI
     needs:
     - build
-    if: startsWith(github.event.head_commit.message, 'chore(release)')
+    if: contains(github.event.head_commit.message, 'chore(release)')
     runs-on: ubuntu-22.04
 
     environment:
@@ -70,7 +70,7 @@ jobs:
       Publish to PyPI
     needs:
     - publish-to-test-pypi
-    if: startsWith(github.event.head_commit.message, 'chore(release)')
+    if: contains(github.event.head_commit.message, 'chore(release)')
     runs-on: ubuntu-22.04
 
     environment:
