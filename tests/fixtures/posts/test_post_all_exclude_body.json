@@ -1,0 +1,143 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/posts/?exclude_body=True",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "Allow": [
+                        "GET, POST, HEAD, OPTIONS"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Age": [
+                        "0"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 14:04:12 GMT"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kjyo7100128-IAD, cache-vie6334-VIE"
+                    ],
+                    "content-length": [
+                        "916"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "X-Timer": [
+                        "S1716213853.674047,VS0,VE143"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                },
+                "body": {
+                    "string": "{\"meta\":{\"next_page\":null,\"previous_page\":null,\"count\":1},\"data\":[{\"status\":\"published\",\"created\":\"2024-05-17T14:13:46.787544Z\",\"updated\":\"2024-05-17T14:13:46.813008Z\",\"published\":\"2024-05-17T14:13:46.787109Z\",\"title\":\"Example Post\",\"slug\":\"example-post\",\"summary\":\"This is an example blog post. Pretty neat huh?\",\"seo_title\":\"Example Post SEO Optimized Title\",\"meta_description\":\"This is our example blog posts SEO optimized meta description.\",\"featured_image_alt\":\"\",\"url\":\"/example-post\",\"featured_image\":\"https://cdn.buttercms.com/WUkiXJ6RCqZmjR8xihEL\",\"author\":{\"bio\":\"\",\"slug\":\"sdk-tests\",\"email\":\"sdktests@buttercms.com\",\"title\":\"\",\"last_name\":\"Tests\",\"first_name\":\"SDK\",\"facebook_url\":\"\",\"linkedin_url\":\"\",\"instagram_url\":\"\",\"pinterest_url\":\"\",\"profile_image\":\"\",\"twitter_handle\":\"\"},\"tags\":[{\"name\":\"Example Tag\",\"slug\":\"example-tag\"}],\"categories\":[{\"name\":\"Example Category\",\"slug\":\"example-category\"}]}]}",
+                    "object": {
+                        "meta": {
+                            "next_page": null,
+                            "previous_page": null,
+                            "count": 1
+                        },
+                        "data": [
+                            {
+                                "status": "published",
+                                "created": "2024-05-17T14:13:46.787544Z",
+                                "updated": "2024-05-17T14:13:46.813008Z",
+                                "published": "2024-05-17T14:13:46.787109Z",
+                                "title": "Example Post",
+                                "slug": "example-post",
+                                "summary": "This is an example blog post. Pretty neat huh?",
+                                "seo_title": "Example Post SEO Optimized Title",
+                                "meta_description": "This is our example blog posts SEO optimized meta description.",
+                                "featured_image_alt": "",
+                                "url": "/example-post",
+                                "featured_image": "https://cdn.buttercms.com/WUkiXJ6RCqZmjR8xihEL",
+                                "author": {
+                                    "bio": "",
+                                    "slug": "sdk-tests",
+                                    "email": "sdktests@buttercms.com",
+                                    "title": "",
+                                    "last_name": "Tests",
+                                    "first_name": "SDK",
+                                    "facebook_url": "",
+                                    "linkedin_url": "",
+                                    "instagram_url": "",
+                                    "pinterest_url": "",
+                                    "profile_image": "",
+                                    "twitter_handle": ""
+                                },
+                                "tags": [
+                                    {
+                                        "name": "Example Tag",
+                                        "slug": "example-tag"
+                                    }
+                                ],
+                                "categories": [
+                                    {
+                                        "name": "Example Category",
+                                        "slug": "example-category"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

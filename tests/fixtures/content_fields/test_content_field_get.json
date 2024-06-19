@@ -1,0 +1,147 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/content/navigation_menu_item/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Age": [
+                        "1171"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kcgs7200124-IAD, cache-vie6383-VIE"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "X-Cache": [
+                        "MISS, HIT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 13:38:08 GMT"
+                    ],
+                    "X-Timer": [
+                        "S1716212289.984366,VS0,VE1"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "content-length": [
+                        "433"
+                    ]
+                },
+                "body": {
+                    "string": "{\"meta\":{\"count\":6,\"next_page\":null,\"previous_page\":null},\"data\":{\"navigation_menu_item\":[{\"meta\":{\"id\":735745},\"label\":\"Home\",\"url\":\"#home\"},{\"meta\":{\"id\":735746},\"label\":\"About\",\"url\":\"#about\"},{\"meta\":{\"id\":735747},\"label\":\"Features\",\"url\":\"#features\"},{\"meta\":{\"id\":735748},\"label\":\"Try It\",\"url\":\"#tryit\"},{\"meta\":{\"id\":735749},\"label\":\"Testimonials\",\"url\":\"#testimonials\"},{\"meta\":{\"id\":735750},\"label\":\"Blog\",\"url\":\"#blog\"}]}}",
+                    "object": {
+                        "meta": {
+                            "count": 6,
+                            "next_page": null,
+                            "previous_page": null
+                        },
+                        "data": {
+                            "navigation_menu_item": [
+                                {
+                                    "meta": {
+                                        "id": 735745
+                                    },
+                                    "label": "Home",
+                                    "url": "#home"
+                                },
+                                {
+                                    "meta": {
+                                        "id": 735746
+                                    },
+                                    "label": "About",
+                                    "url": "#about"
+                                },
+                                {
+                                    "meta": {
+                                        "id": 735747
+                                    },
+                                    "label": "Features",
+                                    "url": "#features"
+                                },
+                                {
+                                    "meta": {
+                                        "id": 735748
+                                    },
+                                    "label": "Try It",
+                                    "url": "#tryit"
+                                },
+                                {
+                                    "meta": {
+                                        "id": 735749
+                                    },
+                                    "label": "Testimonials",
+                                    "url": "#testimonials"
+                                },
+                                {
+                                    "meta": {
+                                        "id": 735750
+                                    },
+                                    "label": "Blog",
+                                    "url": "#blog"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

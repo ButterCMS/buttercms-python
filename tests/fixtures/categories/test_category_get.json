@@ -1,0 +1,100 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/categories/example-category",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "content-length": [
+                        "62"
+                    ],
+                    "Age": [
+                        "0"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 12:53:23 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "X-Served-By": [
+                        "cache-iad-kcgs7200104-IAD, cache-vie6336-VIE"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Timer": [
+                        "S1716209604.625953,VS0,VE131"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ]
+                },
+                "body": {
+                    "string": "{\"data\":{\"name\":\"Example Category\",\"slug\":\"example-category\"}}",
+                    "object": {
+                        "data": {
+                            "name": "Example Category",
+                            "slug": "example-category"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -7,7 +7,12 @@ on:
     branches: [ master ]
 
 jobs:
+  test:
+    if: contains(github.event.head_commit.message, 'chore(release)')
+    uses: ./.github/workflows/test.yml
+
   build:
+    needs: test
     if: contains(github.event.head_commit.message, 'chore(release)')
     runs-on: ubuntu-22.04
     steps:  
@@ -24,13 +29,13 @@ jobs:
 
     - name: Install pypa/build
       run: >-
-        python3 -m
+        python -m
         pip install
         build
         --user
 
     - name: Build a binary wheel and a source tarball
-      run: python3 -m build
+      run: python -m build
     
     - name: Store the distribution packages
       uses: actions/upload-artifact@v4.3.3
@@ -41,8 +46,7 @@ jobs:
   publish-to-test-pypi:
     name: >-
       Publish to Test PyPI
-    needs:
-    - build
+    needs: build
     if: contains(github.event.head_commit.message, 'chore(release)')
     runs-on: ubuntu-22.04
 
@@ -68,8 +72,7 @@ jobs:
   publish-to-pypi:
     name: >-
       Publish to PyPI
-    needs:
-    - publish-to-test-pypi
+    needs: publish-to-test-pypi
     if: contains(github.event.head_commit.message, 'chore(release)')
     runs-on: ubuntu-22.04
 

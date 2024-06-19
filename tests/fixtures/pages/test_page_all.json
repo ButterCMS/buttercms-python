@@ -1,0 +1,207 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "https://api.buttercms.com/v2/pages/landing-page/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.31.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "X-Butter-Client": [
+                        "Python/2.1.1"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Served-By": [
+                        "cache-iad-kcgs7200026-IAD, cache-vie6356-VIE"
+                    ],
+                    "Via": [
+                        "1.1 vegur, 1.1 varnish, 1.1 varnish"
+                    ],
+                    "X-Cache": [
+                        "MISS, MISS"
+                    ],
+                    "content-length": [
+                        "3752"
+                    ],
+                    "Vary": [
+                        "Origin, Accept-Encoding"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Age": [
+                        "0"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Date": [
+                        "Mon, 20 May 2024 13:55:39 GMT"
+                    ],
+                    "Accept-Ranges": [
+                        "bytes"
+                    ],
+                    "X-Cache-Hits": [
+                        "0, 0"
+                    ],
+                    "Server": [
+                        "gunicorn/19.9.0"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-Frame-Options": [
+                        "DENY"
+                    ],
+                    "X-Timer": [
+                        "S1716213340.842340,VS0,VE139"
+                    ],
+                    "Referrer-Policy": [
+                        "same-origin"
+                    ]
+                },
+                "body": {
+                    "string": "{\"meta\":{\"next_page\":null,\"previous_page\":null,\"count\":1},\"data\":[{\"slug\":\"landing-page-with-components\",\"name\":\"Landing Page with Components\",\"published\":\"2024-05-17T14:14:41.484894Z\",\"updated\":\"2024-05-17T14:14:41.522160Z\",\"page_type\":\"landing-page\",\"fields\":{\"seo\":{\"title\":\"Sample Landing Page with Components - powered by ButterCMS\",\"description\":\"Sample Landing Page with Components - powered by ButterCMS\"},\"body\":[{\"type\":\"hero\",\"fields\":{\"headline\":\"Welcome to your ButterCMS Proof of Concept\",\"subheadline\":\"Use this app as your own proof of concept to explore Butter's capabilities for yourself. When you're ready, host this app and invite your team to try it out all well!\",\"image\":\"https://cdn.buttercms.com/DVG5DLMQ9ywaCwfEAgL2\",\"button_label\":\"Update this Page in Butter\",\"button_url\":\"https://buttercms.com/pages/\",\"scroll_anchor_id\":\"home\"}},{\"type\":\"two_column_with_image\",\"fields\":{\"headline\":\"ButterCMS is your content backend\",\"subheadline\":\"Butter has three core content solutions: Pages, Posts, and Collections. Combine this with advanced capabilities like localization, Write API, multi-site + multi-env and Butter is your centralized content backend no matter how much content you're managing.\",\"image\":\"https://cdn.buttercms.com/yg7mFNnNSpyXLpwvp0KX\",\"image_position\":\"left\",\"button_label\":\"Update this Page in Butter\",\"button_url\":\"https://buttercms.com/pages/\",\"scroll_anchor_id\":\"about\"}},{\"type\":\"features\",\"fields\":{\"headline\":\"This page is built using ButterCMS Components\",\"subheadline\":\"This page is an example of utilizing Butter Components which allow you to build dynamic landing pages by choosing Components from a Component Library. Reuse and reorder Components in any way you want!\",\"scroll_anchor_id\":\"features\",\"features\":[{\"headline\":\"Components on this page\",\"description\":\"This sample page has four component types: hero, two column with image, features, and testimonials.\",\"icon\":\"https://cdn.buttercms.com/1evWeDvPQ3eby8N5pZsg\"},{\"headline\":\"Build your own\",\"description\":\"This page is just an example set of Components. You can build your own custom Component library!\",\"icon\":\"https://cdn.buttercms.com/WX5OIKIPQAmu0YCAjZpH\"},{\"headline\":\"Reorder them\",\"description\":\"Components are great because you can reorder them from your Butter dashboard\",\"icon\":\"https://cdn.buttercms.com/h2nnt9PZSbaj20FLScbP\"},{\"headline\":\"Infinite possibilities\",\"description\":\"Build carousels, call to actions, testimonials, and much more. There's infinite flexbility.\",\"icon\":\"https://cdn.buttercms.com/FwNLtx6dR7ybtG1WenrK\"}]}},{\"type\":\"two_column_with_image\",\"fields\":{\"headline\":\"Customize this page\",\"subheadline\":\"<p>Try updating the content of this page to reflect your own. You can also explore modifying these components or creating your own in your Butter dashboard.  Learn more about <a href=\\\"https://buttercms.com/kb/creating-editing-and-deleting-pages-and-page-types\\\">Page Types</a> and <a href=\\\"https://buttercms.com/kb/how-to-modify-components\\\">Components</a>.</p>\",\"image\":\"https://cdn.buttercms.com/AJPaLE3ToKRoLwWQeaww\",\"image_position\":\"right\",\"button_label\":\"Update this Page in Butter\",\"button_url\":\"https://buttercms.com/pages/\",\"scroll_anchor_id\":\"tryit\"}},{\"type\":\"testimonials\",\"fields\":{\"headline\":\"What our customers say\",\"scroll_anchor_id\":\"testimonials\",\"testimonial\":[{\"quote\":\"Super Flexible CMS Solution\",\"name\":\"Hampton Catlin\",\"title\":\"Creator of Sass and Haml\"},{\"quote\":\"A breath of fresh air in the CMS world, once you go headless with butter you'll never go back.\",\"name\":\"Bryan MacMillan\",\"title\":\"IT Admin\"},{\"quote\":\"I was able to quickly draft new pages, circulate them to the team, edit them, and then ultimately publish intuitively.\",\"name\":\"Kim Kohatsu\",\"title\":\"CMO\"}]}}]}}]}",
+                    "object": {
+                        "meta": {
+                            "next_page": null,
+                            "previous_page": null,
+                            "count": 1
+                        },
+                        "data": [
+                            {
+                                "slug": "landing-page-with-components",
+                                "name": "Landing Page with Components",
+                                "published": "2024-05-17T14:14:41.484894Z",
+                                "updated": "2024-05-17T14:14:41.522160Z",
+                                "page_type": "landing-page",
+                                "fields": {
+                                    "seo": {
+                                        "title": "Sample Landing Page with Components - powered by ButterCMS",
+                                        "description": "Sample Landing Page with Components - powered by ButterCMS"
+                                    },
+                                    "body": [
+                                        {
+                                            "type": "hero",
+                                            "fields": {
+                                                "headline": "Welcome to your ButterCMS Proof of Concept",
+                                                "subheadline": "Use this app as your own proof of concept to explore Butter's capabilities for yourself. When you're ready, host this app and invite your team to try it out all well!",
+                                                "image": "https://cdn.buttercms.com/DVG5DLMQ9ywaCwfEAgL2",
+                                                "button_label": "Update this Page in Butter",
+                                                "button_url": "https://buttercms.com/pages/",
+                                                "scroll_anchor_id": "home"
+                                            }
+                                        },
+                                        {
+                                            "type": "two_column_with_image",
+                                            "fields": {
+                                                "headline": "ButterCMS is your content backend",
+                                                "subheadline": "Butter has three core content solutions: Pages, Posts, and Collections. Combine this with advanced capabilities like localization, Write API, multi-site + multi-env and Butter is your centralized content backend no matter how much content you're managing.",
+                                                "image": "https://cdn.buttercms.com/yg7mFNnNSpyXLpwvp0KX",
+                                                "image_position": "left",
+                                                "button_label": "Update this Page in Butter",
+                                                "button_url": "https://buttercms.com/pages/",
+                                                "scroll_anchor_id": "about"
+                                            }
+                                        },
+                                        {
+                                            "type": "features",
+                                            "fields": {
+                                                "headline": "This page is built using ButterCMS Components",
+                                                "subheadline": "This page is an example of utilizing Butter Components which allow you to build dynamic landing pages by choosing Components from a Component Library. Reuse and reorder Components in any way you want!",
+                                                "scroll_anchor_id": "features",
+                                                "features": [
+                                                    {
+                                                        "headline": "Components on this page",
+                                                        "description": "This sample page has four component types: hero, two column with image, features, and testimonials.",
+                                                        "icon": "https://cdn.buttercms.com/1evWeDvPQ3eby8N5pZsg"
+                                                    },
+                                                    {
+                                                        "headline": "Build your own",
+                                                        "description": "This page is just an example set of Components. You can build your own custom Component library!",
+                                                        "icon": "https://cdn.buttercms.com/WX5OIKIPQAmu0YCAjZpH"
+                                                    },
+                                                    {
+                                                        "headline": "Reorder them",
+                                                        "description": "Components are great because you can reorder them from your Butter dashboard",
+                                                        "icon": "https://cdn.buttercms.com/h2nnt9PZSbaj20FLScbP"
+                                                    },
+                                                    {
+                                                        "headline": "Infinite possibilities",
+                                                        "description": "Build carousels, call to actions, testimonials, and much more. There's infinite flexbility.",
+                                                        "icon": "https://cdn.buttercms.com/FwNLtx6dR7ybtG1WenrK"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "two_column_with_image",
+                                            "fields": {
+                                                "headline": "Customize this page",
+                                                "subheadline": "<p>Try updating the content of this page to reflect your own. You can also explore modifying these components or creating your own in your Butter dashboard.  Learn more about <a href=\"https://buttercms.com/kb/creating-editing-and-deleting-pages-and-page-types\">Page Types</a> and <a href=\"https://buttercms.com/kb/how-to-modify-components\">Components</a>.</p>",
+                                                "image": "https://cdn.buttercms.com/AJPaLE3ToKRoLwWQeaww",
+                                                "image_position": "right",
+                                                "button_label": "Update this Page in Butter",
+                                                "button_url": "https://buttercms.com/pages/",
+                                                "scroll_anchor_id": "tryit"
+                                            }
+                                        },
+                                        {
+                                            "type": "testimonials",
+                                            "fields": {
+                                                "headline": "What our customers say",
+                                                "scroll_anchor_id": "testimonials",
+                                                "testimonial": [
+                                                    {
+                                                        "quote": "Super Flexible CMS Solution",
+                                                        "name": "Hampton Catlin",
+                                                        "title": "Creator of Sass and Haml"
+                                                    },
+                                                    {
+                                                        "quote": "A breath of fresh air in the CMS world, once you go headless with butter you'll never go back.",
+                                                        "name": "Bryan MacMillan",
+                                                        "title": "IT Admin"
+                                                    },
+                                                    {
+                                                        "quote": "I was able to quickly draft new pages, circulate them to the team, edit them, and then ultimately publish intuitively.",
+                                                        "name": "Kim Kohatsu",
+                                                        "title": "CMO"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
