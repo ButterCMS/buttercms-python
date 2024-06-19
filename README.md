@@ -1,4 +1,4 @@
-# buttercms-python - 2.1.1 <!-- {x-release-please-version} -->
+# buttercms-python - 2.2.0 <!-- {x-release-please-version} -->
 
 [![PyPI version](https://badge.fury.io/py/buttercms-python.svg)](https://badge.fury.io/py/buttercms-python)
 [![TestPyPI version](https://img.shields.io/pypi/v/buttercms-python?label=TestPyPI)](https://test.pypi.org/project/buttercms-python/)

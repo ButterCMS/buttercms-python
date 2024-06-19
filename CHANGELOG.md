@@ -1,5 +1,25 @@
 # Changelog
 
+## [2.2.0](https://github.com/ButterCMS/buttercms-python/compare/v2.1.1...v2.2.0) (2024-06-19)
+
+
+### Features
+
+* add fixtures for tests ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+* block outgoing http traffic in tests ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+* implement tests ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+* update requirements.txt to include vcrpy ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+* update tests ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+
+
+### Bug Fixes
+
+* move tests to seperate from main module ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+* rename test variables ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+* review fixes ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+* review fixes ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+* update test command in CI/CD ([01838ec](https://github.com/ButterCMS/buttercms-python/commit/01838ecd111aeea1f40dd1d205c2901499ad543a))
+
 ## [2.1.1](https://github.com/ButterCMS/buttercms-python/compare/v2.1.0...v2.1.1) (2024-05-07)
 
 
