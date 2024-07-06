@@ -1,6 +1,6 @@
 # dependecies required for python versions 3.8 - 3.12
 build==1.2.1; python_version >= '3.8'
-certifi==2024.2.2; python_version >= '3.8'
+certifi==2024.7.4; python_version >= '3.8'
 charset-normalizer==3.3.2; python_version >= '3.8'
 idna==3.7; python_version >= '3.8'
 packaging==24.0; python_version >= '3.8'
